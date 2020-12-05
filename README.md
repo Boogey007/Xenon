@@ -56,3 +56,22 @@ Step 6: IF statement
 		output: 111
 
 Step 6: gimmie the loop, gimmie the loop the for loop lol
+		js for loop = for( i = 0; i < FACTOR; i++) CODE
+		basic for loop syntax FOR <var name here> = <starting value> TO <ending value> THEN <expr>
+		VAR result = 1
+		FOR i = 1 TO 11 THEN result * i
+		also include while as its copy/pasta
+		input: FOR i = 1 TO 6 THEN VAR result = result * i
+		output: error result not defined
+		input: VAR result = 1
+		repeat FOR i = 1 TO 6 THEN VAR result = result * i
+		output:
+		input: result
+		output: 120
+		also allows step so i++/+--
+		but format is FOR i = 5 TO 0 STEP -1 THEN VAR result = result * i
+		--
+		input: WHILE TRUE THEN 123
+		output: will run inf...\
+
+Step 7: fn()'s
