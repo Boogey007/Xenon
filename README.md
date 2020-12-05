@@ -5,7 +5,26 @@ alt="XENON"
 style="margin-right: 10px;"
 />
 
+This code was written in learning from the articles from this source. They were loosely followed however thhe main source came from here
 https://ruslanspivak.com/lsbasi-part1/
+https://ruslanspivak.com/lsbasi-part2/
+https://ruslanspivak.com/lsbasi-part3/
+https://ruslanspivak.com/lsbasi-part4/
+https://ruslanspivak.com/lsbasi-part5/
+https://ruslanspivak.com/lsbasi-part6/
+https://ruslanspivak.com/lsbasi-part7/
+https://ruslanspivak.com/lsbasi-part8/
+https://ruslanspivak.com/lsbasi-part9/
+https://ruslanspivak.com/lsbasi-part10/
+https://ruslanspivak.com/lsbasi-part11/
+https://ruslanspivak.com/lsbasi-part12/
+https://ruslanspivak.com/lsbasi-part13/
+https://ruslanspivak.com/lsbasi-part14/
+https://ruslanspivak.com/lsbasi-part15/
+https://ruslanspivak.com/lsbasi-part16/
+https://ruslanspivak.com/lsbasi-part17/
+https://ruslanspivak.com/lsbasi-part18/
+https://ruslanspivak.com/lsbasi-part19/
 
 This language was built with retorspect to the above article
 Step 1: create a simple parser to generatre token with a given key such as Int:1
@@ -100,4 +119,19 @@ Step 8: strings
 		"TEXT WITH \\BACKSLASH\\"
 		"TEXT WITH \n /nnewlines"
 
+Step 9: Lists
+		brakcets will be used for the lists [] seperated by commas
+		[1,2,3,4,5]
+		also to add an item to a list
+		[1,2,3] + 4 = [1,2,3,4]
+		to concat two lists
+		[1,2,3] * [3,4,5] = [1,2,3,3,4,5,]
+		[1,2,3] - -1 = [1,2] - removes last element
+		[1,2,3] - 1 = [1,3] removes index element
+		[1,2,3] / 0 = 1 just like js listname[0]
+		[1,2,3] / -1 = 3 just like js listname[listname.length - 1]
+		input: [1,2,3,4]
+		output: [1,2,3,4]
+		can now be used with for and while loop seeing as they return a list
+		
 
