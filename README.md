@@ -11,6 +11,16 @@ Step 1: create a simple parser to generatre token with a given key such as Int:1
 Step 2: Basic math operations with pemdas recognigtion to correctly so math can be
 		done correctly.
 	 	Beef up error handling ofc.
+		input: 2 * 3 + 1
+		output: ((INT:2, MUL, INT:3), PLUS, INT:1)
+		Support uniary operations
 
+Step 3: Interpreter
+		Lexed -> parse -> interpreted, taking in the tokens now to actualy evaluate
+		implemetaion of checking tokens to add simple mathmatiecal logic to the token being used (+,-,/)
+		uniary operations such as -4 which is a negative numbers along with --4 which would be a postive 4
+		need to also add support for /0 because atm python takes over and crashes
+		during runtime keep track of any errors or any results
+		all inline so far nee to break into a text file soon
 
-Step 3:
+Step 4:
