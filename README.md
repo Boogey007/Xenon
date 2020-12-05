@@ -1,3 +1,10 @@
+<img
+src="images/Xenon_Logo.jpg"
+raw=true
+alt="XENON"
+style="margin-right: 10px;"
+/>
+
 https://ruslanspivak.com/lsbasi-part1/
 
 This language was built with retorspect to the above article
@@ -87,4 +94,10 @@ Step 7: fn()'s
 		output: 7
 
 Step 8: strings
+		a couple of things to account for here
+		"TEXT"
+		"TEXT WITH /"QUOTES/""
+		"TEXT WITH \\BACKSLASH\\"
+		"TEXT WITH \n /nnewlines"
+
 
