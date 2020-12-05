@@ -7,7 +7,6 @@ Step 1: create a simple parser to generatre token with a given key such as Int:1
 		input: 1 + 2
 		output: [INT:1, PLUS, INT:2]
 
-
 Step 2: Basic math operations with pemdas recognigtion to correctly so math can be
 		done correctly.
 	 	Beef up error handling ofc.
@@ -33,4 +32,16 @@ Step 4: Variables
 		output: 5
 		input: x
 		output: 5
-Step 5:
+
+Step 5: Logical Operators
+		Additon of ! as well as equals, less, greater, equals toos
+		neeed new format to be looking like this (factor) == (factor)
+		addition of NOTS and booleans that instead of returrning true or false go by binary values
+		input: 5 == 5
+		output: 1
+		input: 5 == 3
+		output: 0
+		additiaonl support can be TRUE,FALSE equalling their bianry values
+
+Step 6: IF statement
+		
