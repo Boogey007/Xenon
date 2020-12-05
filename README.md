@@ -44,4 +44,15 @@ Step 5: Logical Operators
 		additiaonl support can be TRUE,FALSE equalling their bianry values
 
 Step 6: IF statement
-		
+		add new rule to grammar need to check for an IF <condition> THEN ELIF/ELSE
+		also scenario where we have multiple elseifs which oculd cause trouble
+		make function to determine if a resilut is true or not based on the return value 1/0 rem. 0 = FALSE
+		will javascripty names and variables later but easier to keep in py for the time being
+		input: IF 5==5 THEN 123
+		output: 132
+		input: IF 5 == 4 THEN 132
+		output:
+		input: IF 5 == 4 THEN 132 ELSE 111
+		output: 111
+
+Step 6: gimmie the loop, gimmie the loop the for loop lol
