@@ -75,3 +75,16 @@ Step 6: gimmie the loop, gimmie the loop the for loop lol
 		output: will run inf...\
 
 Step 7: fn()'s
+		basic function functioanlity lol no pun intended
+		assigning fucntion to a var name
+		anon fns just nameless ones
+		argument excpetion on a fucntion
+		input: FUN add(a, b) -> a + b
+		output: <function add>
+		so now that funciton has been defined we can now use
+		so calling
+		input: add(2,5)
+		output: 7
+
+Step 8: strings
+
