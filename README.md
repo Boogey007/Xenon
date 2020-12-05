@@ -23,4 +23,14 @@ Step 3: Interpreter
 		during runtime keep track of any errors or any results
 		all inline so far nee to break into a text file soon
 
-Step 4:
+Step 4: Variables
+		Format: VAR a = 10 just like js
+		VAR-keyoword
+		var name  - indetifier
+		= - equals
+		need symbol table as well
+		input: VAR x = 5
+		output: 5
+		input: x
+		output: 5
+Step 5:
