@@ -161,3 +161,11 @@ Step 9: Multi-Line
 		checks for new lines
 
 Step 10: Return; Continue; Break;
+		 Implement the simple keywords above and add them on as if they wree notmatl
+		 python fucntions. if none of these exists then must be a normal expression do an error check add to syntx error but add in the above keyword sin the error handling.
+		 modify the if condtions to allow single and multiline  also can be applied to while and for but that syntax is kinda awful looking.
+		 multiline support is now jsut semicolons so
+		 input: FUN test(); VAR foo = 5; RETURN foo; END
+		 output: <function test>
+		 inputL test()
+		 output: 5
