@@ -149,3 +149,15 @@ Step 9: Built in Stoof
 		extend
 		VAR age = INPUT_INT() - now allows user to type in a certain age
 		PRINT("HELLOW WORLD!")
+
+Step 9: Multi-Line
+		Need to reorder if statement to allow multiple expressions and end with "END"
+		update lexer with the new line and the end line aslo add to keywords
+		statement rule
+		return a new list of resluts based on semi colon so ex:
+		input: 1 + 2; 3 + 4; 5 + 6;
+		output: [3, 7, 11]
+		empty expression fix on just space enter
+		checks for new lines
+
+Step 10: Return; Continue; Break;
