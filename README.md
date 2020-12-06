@@ -133,5 +133,19 @@ Step 9: Lists
 		input: [1,2,3,4]
 		output: [1,2,3,4]
 		can now be used with for and while loop seeing as they return a list
-		
 
+Step 9: Built in Stoof
+		print
+		print_ret
+		input
+		input_int
+		clear
+		is_number
+		is_string
+		is_list
+		is_function
+		append
+		pop
+		extend
+		VAR age = INPUT_INT() - now allows user to type in a certain age
+		PRINT("HELLOW WORLD!")
