@@ -1,0 +1,61 @@
+~ This is how a comment is denoted
+
+~ Welcome to Xenon the interepreted interpreted programming language
+
+PRINT("Hello World!")
+
+~ Basic function defition
+FUN potatoSoup(word) -> word + "Soup"
+
+~ appending elemetnts togethor
+FUN appendElements(elements, deliminator)
+	VAR outcome = ""
+	VAR lengthOfArray = LEN(elements)
+
+	FOR x = 0 TO lengthOfArray THEN
+		VAR outcome = outcome + elements/x
+		IF x != lengthOfArray - 1 THEN VAR outcome = outcome + deliminator
+	END
+	RETURN outcome
+END
+
+~ mapping function
+FUN map(elements, func)
+	VAR new_elements = []
+
+	FOR i = 0 TO LEN(elements) THEN
+		APPEND(new_elements, func(elements/i))
+	END
+
+	RETURN new_elements
+END
+
+~ potato soup code
+PRINT(" ")
+PRINT("POTATO SOUP")
+FOR i = 0 TO 5 THEN
+	IF i == 1 THEN
+		PRINT(potatoSoup("potato"))
+	ELSE
+	 	PRINT(potatoSoup("regular"))
+	END
+END
+
+~ concat a list with deliminator
+PRINT(" ")
+PRINT("CONCAT FUNCTION")
+FOR i = 0 TO 5 THEN
+	PRINT(appendElements([potatoSoup("potato"), potatoSoup("regular")], ", "))
+	PRINT(i)
+END
+
+
+~ concat a list with deliminator howwver using a mapping function
+~ pass in vars to mapping gunvtion pass in function you want to map too
+~ pass in the last arg for that function and then join once ahain
+PRINT(" ")
+PRINT("MAPPING FUNCTION")
+PRINT_RET("\n")
+FOR i = 0 TO 5 THEN
+	PRINT(appendElements(map(["potato", "regular"], potatoSoup), ", " ))
+END
