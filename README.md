@@ -126,7 +126,7 @@ Step 9: Lists
 		[1,2,3] + 4 = [1,2,3,4]
 		to concat two lists
 		[1,2,3] * [3,4,5] = [1,2,3,3,4,5,]
-		[1,2,3] - -1 = [1,2] - removes last element
+		[1,2,3] - -1 =  - removes last element
 		[1,2,3] - 1 = [1,3] removes index element
 		[1,2,3] / 0 = 1 just like js listname[0]
 		[1,2,3] / -1 = 3 just like js listname[listname.length - 1]
@@ -167,5 +167,9 @@ Step 10: Return; Continue; Break;
 		 multiline support is now jsut semicolons so
 		 input: FUN test(); VAR foo = 5; RETURN foo; END
 		 output: <function test>
-		 inputL test()
+		 input: test()
 		 output: 5
+
+Step 11: run and commenting
+		 this will be able to tak ein a file to run have a demo workign file with bascic code aligning with what weve written as well as the ability to add comments. Check first by getting a file name
+		 addubg support for list of the lengths that get returned when using loops
