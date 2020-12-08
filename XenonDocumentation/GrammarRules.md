@@ -69,3 +69,31 @@
 	 : KEYWORD:FUN IDENTIFIER?
 	 LPAREN (IDENTIFIER (COMMA IDENTIFIER)*)? RPAREN
 	 (ARROW expr) || (NEWLINE statements KEYWORD:END)
+
+18. **STRING**
+	: 
+	 QUOTE (
+		ASCII - [ ", \, Isolated CR ] |
+		QUOTE_ESCAPE |
+		ASCII_ESCAPE | 
+		NEWLINE
+	)* QUOTE
+
+19. **INT**
+	:
+	[0 - 9]+ 	{Decimal}
+	0x[0 - F]+	{Hexadecimal}
+	0o[0 - 7]+	{Octal}
+	0b[0 - 1]+	{Binary}
+	
+20. **FLOAT**
+	:
+	[0 - F]+ (e | E | p | P) [0 - F]+
+	Conditional, if opening integer is hex, P must be used to separate
+				if opening integer i decimal, E must be used to separate
+	
+21. **IDENTIFIER**
+	:
+	(
+		ASCII - [ ", \, Isolated CR]
+	)*

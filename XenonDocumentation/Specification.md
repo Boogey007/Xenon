@@ -38,6 +38,10 @@ TT_FLOAT  =  'FLOAT' : float value ( 12.3 )
 
 TT_STRING  =  'STRING' : string value ( "HI MOM" )
 
+TT_QUOTE = 'QUOTE' : opening/closing double quotes ( " " )
+
+TT_CHARQUOTES = 'CHARQUOTES' : opening/closing single quotes ( ' ' )
+
 TT_IDENTIFIER  =  'IDENTIFIER' : variable name ( x )
 
 TT_KEYWORD  =  'KEYWORD' : above keyword ( VAR )
@@ -87,7 +91,7 @@ TT_EOF  =  'EOF' : end of file ( yea lol )
 
 ## Symbol Table
 
-Functions that are built into the language ( this will be chaning )
+Functions that are built into the language ( this will be changing )
 
 ```
 global_symbol_table =  SymbolTable()
