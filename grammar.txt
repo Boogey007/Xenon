@@ -11,18 +11,23 @@ expr        : KEYWORD:VAR IDENTIFIER EQ expr
 comp-expr   : NOT comp-expr
             : arith-expr ((EE|LT|GT|LTE|GTE) arith-expr)*
 
-arith-expr  :	term ((PLUS|MINUS) term)*
+arith-expr  :    term ((PLUS|MINUS) term)*
+            : ((PREINC|PREDEC) term)*
+            : (term (POSTINC|POSTDEC) )*
 
 term        : factor ((MUL|DIV) factor)*
+            : factor ((MOD|AND) factor)*
 
 factor      : (PLUS|MINUS) factor
+            : ((PREINC|PREDEC) term)*
+            : ((POSTINC|POSTDEC) term)*
             : power
 
 power       : call (POW factor)*
 
-call        : atom (LPAREN (expr (COMMA expr)*)? RPAREN)?
+call        : xenon (LPAREN (expr (COMMA expr)*)? RPAREN)?
 
-atom        : INT|FLOAT|STRING|IDENTIFIER
+xenon       : INT|FLOAT|STRING|IDENTIFIER
             : LPAREN expr RPAREN
             : list-expr
             : if-expr
