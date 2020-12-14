@@ -6,23 +6,41 @@
 There are a specific list of keywords within Xenon which will change as the language gets updated over time.
 ```
  KEYWORDS: Use Cases
+ 
     VAR:  	   variable declaration
+    
     AND:  	   logical AND operator
+    
     OR:   	   logical OR operator
+    
     NOT:  	   logical NOT operator
+    
     IF:  	   reserved for IF statement
+    
     ELIF:  	   reserved for IF statement
+    
     ELSE:  	   reserved for IF statement
+    
     FOR:  	   reserved for FOR loop
+    
     TO:  	   reserved for FOR loop
+    
     STEP:  	   inc/dec for FOR loop
+    
     WHILE:     reserved for WHILE loop
+    
     FUN:  	   function declaration
+    
     THEN:  	   used after loop/statement use
+    
     END:  	   ending of loop
+    
     RETURN:    python return
+    
     CONTINUE:  python return
+    
     BREAK:     python return
+    
 
 
 ```
@@ -94,67 +112,84 @@ TT_EOF  =  'EOF' : end of file ( yea lol )
 Functions that are built into the language ( this will be changing )
 
 ```
-global_symbol_table =  SymbolTable()
+CommonX = SymbolTable()
 
-global_symbol_table.set("NULL", Number.null)
+CommonX.set("NULL", Number.null)
 
-global_symbol_table.set("FALSE", Number.false)
+CommonX.set("FALSE", Number.false)
 
-global_symbol_table.set("TRUE", Number.true)
+CommonX.set("TRUE", Number.true)
 
-global_symbol_table.set("MATH_PI", Number.math_PI)
+CommonX.set("MATH_PI", Number.math_PI)
 
-global_symbol_table.set("PRINT", BuiltInFunction.print)
+CommonX.set("FAC", Number.factorial)
 
-global_symbol_table.set("PRINT_RET", BuiltInFunction.print_ret)
+CommonX.set("PRINT", Common.print)
 
-global_symbol_table.set("INPUT", BuiltInFunction.input)
+CommonX.set("PRINT_RET", Common.print_ret)
 
-global_symbol_table.set("INPUT_INT", BuiltInFunction.input_int)
+CommonX.set("INPUT", Common.input)
 
-global_symbol_table.set("CLEAR", BuiltInFunction.clear)
+CommonX.set("INPUT_INT", Common.input_int)
 
-global_symbol_table.set("CLS", BuiltInFunction.clear)
+CommonX.set("CLEAR", Common.clear)
 
-global_symbol_table.set("IS_NUM", BuiltInFunction.is_number)
+CommonX.set("CLS", Common.clear)
 
-global_symbol_table.set("IS_STR", BuiltInFunction.is_string)
+CommonX.set("IS_NUM", Common.is_number)
 
-global_symbol_table.set("IS_LIST", BuiltInFunction.is_list)
+CommonX.set("IS_STR", Common.is_string)
 
-global_symbol_table.set("IS_FUN", BuiltInFunction.is_function)
+CommonX.set("IS_FIN", Common.is_finite)
 
-global_symbol_table.set("APPEND", BuiltInFunction.append)
+CommonX.set("FAC", Common.factorial)
 
-global_symbol_table.set("POP", BuiltInFunction.pop)
+CommonX.set("CEIL", Common.ceil)
 
-global_symbol_table.set("EXTEND", BuiltInFunction.extend)
+CommonX.set("FABS", Common.fabs)
 
-global_symbol_table.set("LEN", BuiltInFunction.len)
+CommonX.set("FLOOR", Common.floor)
 
-global_symbol_table.set("RUN", BuiltInFunction.run)
+CommonX.set("SQRT", Common.sqrt)
+
+CommonX.set("POTATOSOUP", Common.potatosoup)
+
+CommonX.set("IS_LIST", Common.is_list)
+
+CommonX.set("IS_FUN", Common.is_function)
+
+CommonX.set("APPEND", Common.append)
+
+CommonX.set("POP", Common.pop)
+
+CommonX.set("EXTEND", Common.extend)
+
+CommonX.set("LEN", Common.len)
+
+CommonX.set("RUN", Common.run)
+
 ```
 
 
 ## Xenon Error Handling
 We have implemented four custom error handling classes
 ```
-class  IllegalCharError(Error):
+class  IllegalChar(Error):
 
-	   super().__init__(pos_start, pos_end, 'Illegal Character', details)
+	   super().__init__(starting_position, ending_position, 'Illegal Character', details)
 
 
-class  ExpectedCharError(Error):
+class  ExpectedChar(Error):
 
-	   super().__init__(pos_start, pos_end, 'Expected Character', details)
+	   super().__init__(starting_position, ending_position, 'Expected Character', details)
 
 
 class  InvalidSyntaxError(Error):
 
-	   super().__init__(pos_start, pos_end, 'Invalid Syntax', details)
+	   super().__init__(starting_position, ending_position, 'Invalid Syntax', details)
 
 
 class  RTError(Error):
 
-	   super().__init__(pos_start, pos_end, 'Runtime Error', details)
+	   super().__init__(starting_position, ending_position, 'Runtime Error', details)
 ```
